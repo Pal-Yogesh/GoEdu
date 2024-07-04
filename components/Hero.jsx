@@ -26,7 +26,7 @@ const Hero = () => {
           </p>
           <div className="mt-12 mx-10 w-[163px] h-[37px] bg-[#006269] rounded  flex">
             <button className="text-[12px] text-[#FFFFFF] my-2 mx-3 ">
-            <Link href="/AiForm">Take This First Step  </Link>  
+            <Link href="/Goeduform">Take This First Step  </Link>  
             </button>
             <Image
               src="/arrow.svg"
@@ -65,7 +65,7 @@ const Hero = () => {
 
               <div className="mt-9 w-[201px] h-[47px] bg-[#006269] rounded  flex">
                 <button className="text-[15px] text-[#FFFFFF] my-3 mx-3 ">
-                <Link href="/AiForm">Take This First Step  </Link>  
+                <Link href="/Goeduform">Take This First Step  </Link>  
                 </button>
                 <Image
                   src="/arrow.svg"
