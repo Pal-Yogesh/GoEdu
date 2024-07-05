@@ -46,7 +46,7 @@ const SimpleCarousel = () => {
   const settings = {
     infinite: true,
     speed: 500,
-    slidesToShow: 3.2,
+    slidesToShow: 3,
     slidesToScroll: 1,
   
     autoplay: false,
@@ -66,7 +66,7 @@ const SimpleCarousel = () => {
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 2.1,
+          slidesToShow: 2,
           slidesToScroll: 2,
         }
       },
@@ -92,16 +92,16 @@ const SimpleCarousel = () => {
     ]
   };
   return (
-    <div className="relative md:h-[150vh] lg:h-[130vh]  h-[135vh]  ">
+    <div className="relative mb-16 md:h-[150vh] lg:h-[130vh]  h-[135vh]  lg:mb-0 ">
       <div className=" flex flex-col justify-start  md:px-[90px]">
         <div className=" md:w-full px-[21px] ">
           <div className="md:flex  md:w-full md:h-32  mb-[24px] md:justify-center md:mb-[65px] md:text-center">
             <div className="md:w-[400px] mt-10">
-              <h2 className="lg:text-[56px]  md:text-[46px] text-[32px] font-[Prociono] leading-tight">Features And Benefits</h2>
+              <h2 className="lg:text-[56px]  md:text-[46px] text-[32px] font-prociono leading-tight">Features And Benefits</h2>
             </div>
           </div>
-          <div className="md:flex md:text-center mb-[24px] md:h-[130px] md:mb-0  md:px-6">
-            <p className="lg:text-lg md:text-lg  md:text-center font-[Inter]  " >Discover the unique features and benefits that make Go Edu the preferred choice for college counseling. Our platform is designed to provide comprehensive support and personalized insights, ensuring a successful and stress-free college admissions process.</p>
+          <div className="md:flex md:text-center mb-[24px] md:h-[130px] md:mb-5  md:px-6">
+            <p className="lg:text-lg md:text-lg  md:text-center   " >Discover the unique features and benefits that make Go Edu the preferred choice for college counseling. Our platform is designed to provide comprehensive support and personalized insights, ensuring a successful and stress-free college admissions process.</p>
           </div>
 
         </div>
@@ -110,15 +110,15 @@ const SimpleCarousel = () => {
             <div key={index} className="md:px-3 px-4 ">
               <div className="relative border pt-[40px]  md:px-[16px] px-[18px]  h-[375px] md:h-[370px] lg:h-[400px] border-black ">
                 <div>
-                  <h3 className="md:text-[20px] lg:text-[28px]  text-[20px] text-[#000000] mb-[16px] font-[Prociono] leading-none">{value.heading}</h3>
-                  <p className="md:text-[16px] lg:text-[18px]  text-[16px]  font-[Inter] leading-none  text-[#000000]">{value.para}</p>
+                  <h3 className="md:text-[20px] lg:text-[28px]  text-[20px] text-[#000000] mb-[16px] font-prociono leading-none">{value.heading}</h3>
+                  <p className="md:text-[16px]   text-[16px] font-light  leading-none  text-[#000000]">{value.para}</p>
                 </div>
                 
                 <div className=" absolute w-full flex flex-col md:top-[220px] lg:top-[260px] top-[230px]  ">
                   <Image className=" w-[150px] h-[127px] " src={value.imageSrc} alt={"Slide " + (index + 1)}  height={100} width={100}/>
                 </div>
-                <div className="absolute bottom-6 right-6 text-3xl font-[Prociono]">
-                  <span className="font-[Prociono]">{value.num}</span>
+                <div className="absolute bottom-6 right-6 text-3xl font-prociono w-10 h-10 bg-[#006269]">
+                  <span className="font-prociono text-white pl-1">{value.num}</span>
                 </div>
               </div>
             </div>

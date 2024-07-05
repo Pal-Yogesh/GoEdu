@@ -6,7 +6,7 @@ const Data2 = [
     },
     {
       id: 2,
-      title: "AI-Driven Insights",
+      title: "AI-Insights ",
       description: "Leverage the power of AI to gain deep insights into your college options. Our advanced algorithms analyze multiple factors to offer accurate and reliable recommendations, helping you make informed decisions about your future.",
     },
     {

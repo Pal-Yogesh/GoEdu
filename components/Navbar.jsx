@@ -43,25 +43,27 @@ const Navbar = () => {
       {/* laptop */}
       <div className="hidden lg:flex lg:justify-between lg:items-center h-[90px] bg-[#006269]">
         <Image
-          className="mx-16"
+          className="mx-20"
           src="/goEdu 1.svg"
           alt="go edu logo"
           width={88}
           height={53}
         />
         <div className="flex justify-center items-center" id="navbar-default">
-          <ul className="flex space-x-20 mr-12 text-xl">
-            <li className="text-[20px] text-[#FFFFFF]">
+          <ul className="flex space-x-20  text-xl">
+            <li className="text-[18px] text-[#FFFFFF]">
               <Link href="#heroid">About</Link>
             </li>
-            <li className="text-[20px] text-[#FFFFFF]">
+            <li className="text-[18px] text-[#FFFFFF]">
               <Link href="#howweworkid">How We Work</Link>
             </li>
-            <li className="text-[20px] text-[#FFFFFF]">
+            <li className="text-[18px] text-[#FFFFFF]">
               <Link href="#featuresid">Features</Link>
             </li>
           </ul>
-          <div className="border border-[#FFFFFF] rounded mx-20 flex">
+        </div>
+        
+          <div className="border border-[#FFFFFF] rounded mx-12 flex">
             <button className="text-[15px] text-[#FFFFFF] my-3 mx-3">
               <Link href="/Goeduform">Take This First Step</Link>
             </button>
@@ -73,7 +75,7 @@ const Navbar = () => {
               className="mx-3"
             />
           </div>
-        </div>
+
       </div>
     </>
   );

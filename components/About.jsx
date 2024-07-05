@@ -7,7 +7,7 @@ const About = () => {
       <div id="heroid">
         <div className="bg-[#006269] ">
           <div className=" ">
-            <div className="grid  grid-cols-1 ml-10 md:ml-20  md:flex  ">
+            <div className="flex ml-8 md:ml-20  md:flex gap-3  ">
               <h1 className="text-[16px] pt-10 md:pt-20 md:pr-20 md:text-[24px] text-[#FFFFFF]">ABOUT</h1>
               <div className=" ">
                 <p className="text-[32px] pt-7 md:pt-20 md:w-[500px]  font-prociono md:text-[50px] text-[#FFFFFF] leading-none">
@@ -28,13 +28,14 @@ const About = () => {
                   college fit with Goedu!
                 </p>
               </div>
-              <div className="hidden lg:block">
+              <div className="hidden lg:block absolute right-0">
                 <Image
-                  className="mt-10"
+                  className="mt-10 lg:opacity-50 xl:opacity-100 "
                   src="/hand.svg"
                   alt="bg image"
                   width={700}
                   height={400}
+                  
                 />
               </div>
 

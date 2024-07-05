@@ -19,33 +19,6 @@ const Popup = () => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  // const handleSubmit = (e) => {
-  //   e.preventDefault();
-
-  //   emailjs
-  //     .sendForm("service_7aklwae", "template_rz1st8k", form.current, {
-  //       publicKey: "2pUaiU9zWRFb5vMlr",
-  //     })
-  //     .then(
-  //       () => {
-  //         console.log("SUCCESS!");
-  //         alert("Submitted");
-  //         setFormData({
-  //           name: "",
-  //           email: "",
-  //           phone: "",
-  //           course: "",
-  //           message: "",
-  //         });
-         
-  //       },
-  //       (error) => {
-  //         console.log("FAILED...", error.text);
-  //         alert("Failed");
-  //       }
-  //     );
-  // };
-
   const handleClose = () => {
     setIsFormVisible(false);
   };
@@ -94,7 +67,7 @@ const Popup = () => {
   return (
     <div className="z-10  fixed inset-0 flex items-center justify-center    bg-black bg-opacity-50 font-poppins">
       <div
-        className="sm:hidden  cursor-pointer absolute top-[120px] right-[17px] shadow-xl rounded-full"
+        className="md:hidden  cursor-pointer absolute top-[123px] right-[17px] shadow-xl rounded-full"
         onClick={handleClose}
       >
         <svg
@@ -111,13 +84,14 @@ const Popup = () => {
           />
         </svg>
       </div>
-      <div className="bg-[#FFFFFF] w-[351px] h-[600px] sm:w-[950px] sm:h-[520px] rounded  border-8 border-[#CDC6DB30] ">
+
+      <div className="bg-[#FFFFFF] w-[351px] h-[600px] md:w-[710px] md:h-[460px] lg:w-[950px] lg:h-[520px] rounded  border-8 border-[#CDC6DB30] ">
         <div className="  text-[#006269] ">
-          <h1 className="text-[24px] sm:text-[40px] text-center font-semibold mt-4">
+          <h1 className="text-[24px] md:text-[32px] lg:text-[40px] text-center font-semibold mt-4">
             Connect with our Experts
           </h1>
 
-          <h1 className="text-[10px] sm:text-[18px] text-center">
+          <h1 className="text-[10px] md:text-[14px] lg:text-[18px] text-center">
             For further information, please fill in the form below. We will
             contact you as soon as possible.
           </h1>
@@ -125,7 +99,7 @@ const Popup = () => {
 
         <form ref={form} onSubmit={handleSubmit}>
           <div className="font-poppins space-y-5">
-            <div className=" mx-4 mt-5 grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div className=" mx-4 mt-5 grid grid-cols-1 md:grid-cols-2 gap-4">
               <input
                 type="text"
                 name="name"
@@ -166,7 +140,7 @@ const Popup = () => {
                 type="text"
                 name="textmessage"
                 placeholder="Message for our Counsellor (Atmost 250 words)"
-                className="w-[302px] h-[120px] sm:w-[903px] sm:h-[150px]  text-[#969696] px-3 py-2 placeholder-[#667085] text-[16px] border border-[#E7E7E7] bg-[#F9F9F9] rounded-md resize-none"
+                className="w-[302px] h-[120px]  md:w-[660px] md:h-[110px] lg:w-[903px] lg:h-[150px]  text-[#969696] px-3 py-2 placeholder-[#667085] text-[16px] border border-[#E7E7E7] bg-[#F9F9F9] rounded-md resize-none"
                 maxLength={1500}
               ></textarea>
             </div>
@@ -174,7 +148,7 @@ const Popup = () => {
             <div className="flex justify-end items-end mr-4">
               <button
                 type="submit"
-                className="w-[302px] h-[50px] bg-teal-700 text-white py-2 px-4 rounded hover:bg-teal-800 transition duration-300 "
+                className="w-[302px] h-[50px] md:w-[250px] md:h-[50px] bg-teal-700 text-white py-2 px-4 rounded hover:bg-teal-800 transition duration-300 "
               >
                 Enquire Now
               </button>
@@ -183,7 +157,7 @@ const Popup = () => {
         </form>
 
         <div
-          className="hidden sm:flex sm:justify-center sm:items-center sm:pt-[2px] cursor-pointer"
+          className="hidden md:flex md:justify-center md:items-center md:pt-[2px] cursor-pointer"
           onClick={handleClose}
         >
           <svg

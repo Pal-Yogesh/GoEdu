@@ -57,9 +57,9 @@ const Goeduform3 = () => {
 
   return (
     <div className="w-full min-h-screen  overflow-hidden  bg-[#F9F9F9]">
-      <div className="hidden sm:w-full sm:h-[60px] sm:flex sm:justify-center  sm:items-center  sm:gap-10 sm:mt-14 bg-gray-[#F3F4F6] font-poppins bg-[#F3F4F6]">
+      <div className="hidden md:w-full md:h-[60px] md:flex md:justify-center  md:items-center  md:gap-10 md:mt-14 bg-gray-[#F3F4F6] font-poppins bg-[#F3F4F6]">
         <Link href="/Goeduform">
-          <div className="text-[#006269] sm:w-[196px] sm:h-[48px] bg-white sm:flex  sm:items-center sm:justify-center">
+          <div className="text-[#006269] md:w-[196px] md:h-[48px] bg-white md:flex  md:items-center md:justify-center">
             <Image
               className="w-[20px] h-[20px]"
               alt="check image"
@@ -72,7 +72,7 @@ const Goeduform3 = () => {
         </Link>
 
         <Link href="/Goeduform2">
-          <div className="text-[#006269] sm:w-[196px] sm:h-[48px] bg-white sm:flex  sm:items-center sm:justify-center">
+          <div className="text-[#006269] md:w-[196px] md:h-[48px] bg-white md:flex  md:items-center md:justify-center">
             <Image
               className="w-[20px] h-[20px]"
               alt="check image"
@@ -84,13 +84,13 @@ const Goeduform3 = () => {
           </div>
         </Link>
 
-        <div className="sm:w-[196px] sm:h-[48px] bg-white sm:flex  sm:items-center sm:px-4 ">
+        <div className="md:w-[196px] md:h-[48px] bg-white md:flex  md:items-center md:px-4 ">
           <input type="radio" className="w-[20px] h-[20px]" disabled='disabled'/>
           &nbsp;&nbsp; Submit
         </div>
       </div>
 
-      <div className="sm:hidden font-poppins flex items-center justify-center gap-5 mt-5">
+      <div className="md:hidden font-poppins flex items-center justify-center gap-5 mt-5">
         <Link href="/Goeduform">
           {" "}
           <h1 className="w-[112px] h-[21px] text-[12px] text-[#006269] ">
@@ -109,10 +109,10 @@ const Goeduform3 = () => {
         </u>
       </div>
 
-      <div className=" sm:w-[1280px] sm:h-full sm:mx-7 sm:p-6 font-poppins sm:mt-6 bg-[#F9F9F9]">
-        <form ref={form} className="sm:space-y-6" onSubmit={handleSubmit}>
+      <div className=" md:w-[1280px] md:h-full md:mx-7 md:p-6 font-poppins md:mt-6 bg-[#F9F9F9]">
+        <form ref={form} className="md:space-y-6" onSubmit={handleSubmit}>
           <section>
-            <div className="hidden  sm:flex gap-48">
+            <div className="hidden  md:flex gap-48">
               <h2 className="text-lg font-semibold mb-4 text-[24px]">
                 DISCLAIMER
               </h2>
@@ -133,7 +133,7 @@ const Goeduform3 = () => {
             </div>
 
             {/* mobile view */}
-            <div className="sm:hidden w-[390px] h-[160px] font-poppins mt-6 mx-4 ">
+            <div className="md:hidden w-[390px] h-[160px] font-poppins mt-6 mx-4 ">
               <div className="w-[342px] h-[112px]  mx-2">
                 <h2 className="text-lg font-semibold mb-4 text-[24px]">
                   DISCLAIMER
@@ -156,10 +156,10 @@ const Goeduform3 = () => {
          
           </section>
 
-          <div className="sm:pt-60    w-[1280px]  sm:flex justify-center items-center  ">
+          <div className="md:pt-60    w-[1280px]  md:flex justify-center items-center  ">
            
             <div
-              className={`hidden  w-[235px] h-[56px] mb-[70px] rounded font-poppins sm:flex  items-center justify-center cursor-pointer 
+              className={`hidden  w-[235px] h-[56px] mb-[70px] rounded font-poppins md:flex  items-center justify-center cursor-pointer 
                 ${
                   isChecked
                     ? "bg-[#006269] text-white"
@@ -172,7 +172,7 @@ const Goeduform3 = () => {
               </button>
             </div>
             <div
-              className={`sm:hidden  w-[330px] h-[48px] mt-[490px] mx-9 rounded font-poppins flex  items-center justify-center cursor-pointer ${
+              className={`md:hidden  w-[330px] h-[48px] mt-[490px] mx-9 rounded font-poppins flex  items-center justify-center cursor-pointer ${
                 isChecked
                   ? "bg-[#006269] text-white"
                   : "bg-[#006269] opacity-60"
