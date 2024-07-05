@@ -126,7 +126,7 @@ const Goeduform = () => {
       </div>
 
 
-      <div className="md:hidden w-[200px] h-[30px] font-poppins px-8 pt-3 flex gap-14  ">
+      <div className="md:hidden w-[100%] h-[30px] font-poppins flex justify-between items-center  pt-5 px-4 ">
         
           <u>
           <h1 className=" text-[12px]">Personal Details</h1></u>
@@ -137,10 +137,11 @@ const Goeduform = () => {
         <h1 className=" text-[12px]">Submit</h1>
       </div>
 
-      <div className="md:w-[1280px] md:h-full mx-6 mt-10 md:mx-7 md:p-6 font-poppins md:mt-6 bg-[#F9F9F9]">
+
+      <div className="lg:w-[1280px] lg:h-full mx-6 mt-10 lg:mx-7 lg:p-6 font-poppins lg:mt-6 bg-[#F9F9F9]">
         <form className="space-y-6" onSubmit={handleSubmit}>
           <section>
-            <div className="grid grid-cols-1 space-y-5 md:space-y-0   md:grid-cols-4 md:gap-10">
+            <div className="grid grid-cols-1 space-y-5 md:space-y-0   md:grid-cols-4 md:gap-3 lg:gap-10">
               <h2 className="text-[16px] md:text-lg font-semibold mb-4 md:text-[24px] font-poppins">
                 PERSONAL DETAILS
               </h2>
@@ -150,7 +151,7 @@ const Goeduform = () => {
                   name="firstName"
                   placeholder="First Name*"
                   required
-                  className="w-[100%] h-[40px] md:w-[300px] md:h-[56px] px-3 py-2 placeholder-[#667085] text-[16px] border border-[#E7E7E7] font-poppins bg-white rounded-md"
+                  className="w-[100%] h-[40px] lg:w-[300px] md:h-[56px] px-3 py-2 placeholder-[#667085] text-[16px] border border-[#E7E7E7] font-poppins bg-white rounded-md"
                   value={formData.firstName}
                   onChange={handleChange}
                 />
@@ -160,7 +161,7 @@ const Goeduform = () => {
                   type="text"
                   name="middleName"
                   placeholder="Middle Name"
-                  className="w-[100%] h-[40px] md:w-[300px] md:h-[56px] px-3 py-2 placeholder-[#667085] text-[16px] border border-[#E7E7E7] font-poppins rounded-md"
+                  className="w-[100%] h-[40px] lg:w-[300px] md:h-[56px] px-3 py-2 placeholder-[#667085] text-[16px] border border-[#E7E7E7] font-poppins rounded-md"
                   value={formData.middleName}
                   onChange={handleChange}
                 />
@@ -171,7 +172,7 @@ const Goeduform = () => {
                   name="lastName"
                   placeholder="Last Name*"
                   required
-                  className="w-[100%] h-[40px] md:w-[300px] md:h-[56px] px-3 py-2 placeholder-[#667085] text-[16px] font-poppins border border-[#E7E7E7] rounded-md"
+                  className="w-[100%] h-[40px] lg:w-[300px] md:h-[56px] px-3 py-2 placeholder-[#667085] text-[16px] font-poppins border border-[#E7E7E7] rounded-md"
                   value={formData.lastName}
                   onChange={handleChange}
                 />
@@ -228,7 +229,7 @@ const Goeduform = () => {
                   name="email"
                   placeholder="Email*"
                   required
-                  className="w-[100%] h-[40px] md:w-[300px] md:h-[56px] px-3 py-2 placeholder-[#667085] text-[16px] border border-[#E7E7E7] rounded-md"
+                  className="w-[100%] h-[40px] lg:w-[300px] md:h-[56px] px-3 py-2 placeholder-[#667085] text-[16px] border border-[#E7E7E7] rounded-md"
                   value={formData.email}
                   onChange={handleChange}
                 />
@@ -239,7 +240,7 @@ const Goeduform = () => {
                   name="mobile"
                   placeholder="Mobile*"
                   required
-                  className="w-[100%] h-[40px] md:w-[300px] md:h-[56px] px-3 py-2 placeholder-[#667085] text-[16px] border border-[#E7E7E7] rounded-md"
+                  className="w-[100%] h-[40px] lg:w-[300px] md:h-[56px] px-3 py-2 placeholder-[#667085] text-[16px] border border-[#E7E7E7] rounded-md"
                   value={formData.mobile}
                   onChange={handlePhoneChange}
                   maxLength={10}
@@ -250,7 +251,7 @@ const Goeduform = () => {
                   type="tel"
                   name="otherNumber"
                   placeholder="Other Number"
-                  className="w-[100%] h-[40px] md:w-[300px] md:h-[56px] px-3 py-2 placeholder-[#667085] text-[16px] border border-[#E7E7E7] rounded-md"
+                  className="w-[100%] h-[40px] lg:w-[300px] md:h-[56px] px-3 py-2 placeholder-[#667085] text-[16px] border border-[#E7E7E7] rounded-md"
                   value={formData.otherNumber}
                   onChange={handlePhoneChange}
                 />
@@ -268,7 +269,7 @@ const Goeduform = () => {
               <div>
                 <select
                   name="schoolBoard"
-                  className="w-[100%] h-[40px] md:w-[300px] md:h-[56px] px-3 py-2 text-[#677085] text-[16px] border border-[#E7E7E7] rounded-md"
+                  className="w-[100%] h-[40px] lg:w-[300px] md:h-[56px] px-3 py-2 text-[#677085] text-[16px] border border-[#E7E7E7] rounded-md"
                   value={formData.schoolBoard}
                   onChange={handleChange}
                 >
@@ -290,7 +291,7 @@ const Goeduform = () => {
                   name="percentage"
                   placeholder="12th Percentage*"
                   required
-                  className="w-[100%] h-[40px] md:w-[300px] md:h-[56px] px-3 py-2 placeholder-[#667085] text-[16px] border border-[#E7E7E7] rounded-md"
+                  className="w-[100%] h-[40px] lg:w-[300px] md:h-[56px] px-3 py-2 placeholder-[#667085] text-[16px] border border-[#E7E7E7] rounded-md"
                   value={formData.percentage}
                   onChange={handlePercentageChange}
                 />
@@ -299,7 +300,7 @@ const Goeduform = () => {
                 <select
                   name="stream"
                   required
-                  className="w-[100%] h-[40px] md:w-[300px] md:h-[56px] px-3 py-2 text-[#677085] text-[16px] border border-[#E7E7E7] rounded-md"
+                  className="w-[100%] h-[40px] lg:w-[300px] md:h-[56px] px-3 py-2 text-[#677085] text-[16px] border border-[#E7E7E7] rounded-md"
                   value={formData.stream}
                   onChange={handleChange}
                 >
@@ -328,7 +329,7 @@ const Goeduform = () => {
                   name="course1"
                   placeholder="Course 1*"
                   required
-                  className="w-[100%] h-[40px] md:w-[300px] md:h-[56px] px-3 py-2 placeholder-[#667085] text-[16px] border border-[#E7E7E7] rounded-md"
+                  className="w-[100%] h-[40px] lg:w-[300px] md:h-[56px] px-3 py-2 placeholder-[#667085] text-[16px] border border-[#E7E7E7] rounded-md"
                   value={formData.course1}
                   onChange={handleChange}
                 />
@@ -338,7 +339,7 @@ const Goeduform = () => {
                   type="text"
                   name="course2"
                   placeholder="Course 2"
-                  className="w-[100%] h-[40px] md:w-[300px] md:h-[56px] px-3 py-2 placeholder-[#667085] text-[16px] border border-[#E7E7E7] rounded-md"
+                  className="w-[100%] h-[40px] lg:w-[300px] md:h-[56px] px-3 py-2 placeholder-[#667085] text-[16px] border border-[#E7E7E7] rounded-md"
                   value={formData.course2}
                   onChange={handleChange}
                 />
@@ -348,7 +349,7 @@ const Goeduform = () => {
                   type="text"
                   name="course3"
                   placeholder="Course 3"
-                  className="w-[100%] h-[40px] md:w-[300px] md:h-[56px] px-3 py-2 placeholder-[#667085] text-[16px] border border-[#E7E7E7] rounded-md"
+                  className="w-[100%] h-[40px] lg:w-[300px] md:h-[56px] px-3 py-2 placeholder-[#667085] text-[16px] border border-[#E7E7E7] rounded-md"
                   value={formData.course3}
                   onChange={handleChange}
                 />
@@ -360,7 +361,7 @@ const Goeduform = () => {
                     type="text"
                     name="course4"
                     placeholder="Course 4"
-                    className="w-[100%] h-[40px] md:w-[300px] md:h-[56px] px-3 py-2 placeholder-[#667085] text-[16px] border border-[#E7E7E7] rounded-md"
+                    className="w-[100%] h-[40px] lg:w-[300px] md:h-[56px] px-3 py-2 placeholder-[#667085] text-[16px] border border-[#E7E7E7] rounded-md"
                     value={formData.course4}
                     onChange={handleChange}
                   />
@@ -371,7 +372,7 @@ const Goeduform = () => {
                   type="text"
                   name="course4"
                   placeholder="Course 4"
-                  className="w-[100%] h-[40px] md:w-[300px] md:h-[56px] px-3 py-2 placeholder-[#667085] text-[16px] border border-[#E7E7E7] rounded-md"
+                  className="w-[100%] h-[40px] lg:w-[300px] md:h-[56px] px-3 py-2 placeholder-[#667085] text-[16px] border border-[#E7E7E7] rounded-md"
                   value={formData.course4}
                   onChange={handleChange}
                 />
@@ -381,7 +382,7 @@ const Goeduform = () => {
                   type="text"
                   name="course5"
                   placeholder="Course 5"
-                  className="w-[100%] h-[40px] md:w-[300px] md:h-[56px] px-3 py-2 placeholder-[#667085] text-[16px] border border-[#E7E7E7] rounded-md"
+                  className="w-[100%] h-[40px] lg:w-[300px] md:h-[56px] px-3 py-2 placeholder-[#667085] text-[16px] border border-[#E7E7E7] rounded-md"
                   value={formData.course5}
                   onChange={handleChange}
                 />
@@ -389,7 +390,7 @@ const Goeduform = () => {
             </div>
           </section>
 
-          <div className="hidden md:pt-14 md:w-[1280px] md:flex md:justify-center md:items-center">
+          <div className="hidden md:pt-14 lg:w-[1280px] md:flex md:justify-center md:items-center">
             <div
               className={`w-[235px] h-[56px] bg-[#006269]  rounded font-poppins flex text-white items-center justify-center cursor-pointer 
             ${

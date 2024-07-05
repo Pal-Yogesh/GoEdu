@@ -87,7 +87,7 @@ const Goeduform2 = () => {
       </div>
 
 
-      <div className="md:hidden font-poppins w-[200px] h-[30px] flex  gap-14 px-8 pt-3">
+      <div className="md:hidden font-poppins w-[100%] h-[30px] font-poppins flex justify-between items-center  pt-5 px-4">
         <Link href="/Goeduform">
           <h1 className="  text-[12px] text-[#006269] ">
             Personal Details
@@ -103,10 +103,10 @@ const Goeduform2 = () => {
           <h1 className=" text-[12px] ">Submit</h1>
       </div>
 
-      <div className="mx-6 mt-6  md:w-[1280px] md:h-full md:mx-7 md:p-6 font-poppins md:mt-6 bg-[#F9F9F9]">
+      <div className="mx-6 mt-6  lg:w-[1280px] lg:h-full lg:mx-7 lg:p-6 font-poppins lg:mt-6 bg-[#F9F9F9]">
         <form className="space-y-6" onSubmit={handleSubmit}>
           <section>
-            <div className="grid grid-cols-1 space-y-6 md:space-y-9 md:grid-cols-4 md:gap-4">
+            <div className="grid grid-cols-1 space-y-6 md:space-y-9 md:grid-cols-4 md:gap-3 lg:gap-4">
               <h2 className="text-[16px] md:text-lg font-semibold  md:mt-9 md:text-[24px]">
                 PREFERRED LOCATIONS
               </h2>
@@ -116,7 +116,7 @@ const Goeduform2 = () => {
                   name="location1"
                   placeholder="Location 1*"
                   required
-                  className="w-[100%] h-[40px] px-5 py-3 md:w-[300px]  md:h-[56px] md:px-3 md:py-2 placeholder-[#667085] text-[16px] border border-[#E7E7E7] rounded-md"
+                  className="w-[100%] h-[40px] px-5 py-3 lg:w-[300px]  md:h-[56px] md:px-3 md:py-2 placeholder-[#667085] text-[16px] border border-[#E7E7E7] rounded-md"
                   value={formData.location1}
                   onChange={handleChange}
                 />
@@ -126,7 +126,7 @@ const Goeduform2 = () => {
                   type="text"
                   name="location2"
                   placeholder="Location 2"
-                  className="w-[100%] h-[40px] px-5 py-3 md:w-[300px]  md:h-[56px] md:px-3 md:py-2 placeholder-[#667085] text-[16px] border border-[#E7E7E7] rounded-md"
+                  className="w-[100%] h-[40px] px-5 py-3 lg:w-[300px]  md:h-[56px] md:px-3 md:py-2 placeholder-[#667085] text-[16px] border border-[#E7E7E7] rounded-md"
                   value={formData.location2}
                   onChange={handleChange}
                 />
@@ -136,7 +136,7 @@ const Goeduform2 = () => {
                   type="text"
                   name="location3"
                   placeholder="Location 3"
-                  className="w-[100%] h-[40px] px-5 py-3 md:w-[300px]  md:h-[56px] md:px-3 md:py-2 placeholder-[#667085] text-[16px] border border-[#E7E7E7] rounded-md"
+                  className="w-[100%] h-[40px] px-5 py-3 lg:w-[300px]  md:h-[56px] md:px-3 md:py-2 placeholder-[#667085] text-[16px] border border-[#E7E7E7] rounded-md"
                   value={formData.location3}
                   onChange={handleChange}
                 />
@@ -146,7 +146,7 @@ const Goeduform2 = () => {
                   hidden
                   type="text"
                   placeholder="Location 4"
-                  className="w-[100%] h-[40px] px-5 py-3 md:w-[300px]  md:h-[56px] md:px-3 md:py-2 placeholder-[#667085] text-[16px] border border-[#E7E7E7] rounded-md"
+                  className="w-[100%] h-[40px] px-5 py-3 lg:w-[300px]  md:h-[56px] md:px-3 md:py-2 placeholder-[#667085] text-[16px] border border-[#E7E7E7] rounded-md"
                   value={formData.location4}
                   onChange={handleChange}
                 />
@@ -156,7 +156,7 @@ const Goeduform2 = () => {
                   type="text"
                   name="location4"
                   placeholder="Location 4"
-                  className="w-[100%] h-[40px] px-5 py-3 md:w-[300px]  md:h-[56px] md:px-3 md:py-2 placeholder-[#667085] text-[16px] border border-[#E7E7E7] rounded-md"
+                  className="w-[100%] h-[40px] px-5 py-3 lg:w-[300px]  md:h-[56px] md:px-3 md:py-2 placeholder-[#667085] text-[16px] border border-[#E7E7E7] rounded-md"
                   value={formData.location4}
                   onChange={handleChange}
                 />
@@ -166,7 +166,7 @@ const Goeduform2 = () => {
                   type="text"
                   name="location5"
                   placeholder="Location 5"
-                  className="w-[100%] h-[40px] px-5 py-3 md:w-[300px]  md:h-[56px] md:px-3 md:py-2 placeholder-[#667085] text-[16px] border border-[#E7E7E7] rounded-md"
+                  className="w-[100%] h-[40px] px-5 py-3 lg:w-[300px]  md:h-[56px] md:px-3 md:py-2 placeholder-[#667085] text-[16px] border border-[#E7E7E7] rounded-md"
                   value={formData.location5}
                   onChange={handleChange}
                 />
@@ -211,7 +211,7 @@ const Goeduform2 = () => {
                   name="textmessage"
                   type="text"
                   placeholder="Message for our Counsellor (Atmost 250 words)"
-                  className="w-[100%] h-[138px] md:w-[920px]  md:h-[229px] px-3 py-2 placeholder-[#667085] text-[16px] border border-[#E7E7E7] rounded-md resize-none"
+                  className="w-[100%] h-[138px] md:w-[540px]  lg:w-[920px]  md:h-[229px] px-3 py-2 placeholder-[#667085] text-[16px] border border-[#E7E7E7] rounded-md resize-none"
                   maxLength={1500}
                   value={formData.textmessage}
                   onChange={handleChange}
@@ -220,7 +220,7 @@ const Goeduform2 = () => {
             </div>
           </section>
 
-          <div className="hidden md:pt-14  md:w-[1280px] md:flex md:justify-center md:items-center ">
+          <div className="hidden md:pt-14  lg:w-[1280px] md:flex md:justify-center md:items-center ">
             <div
               className={`w-[235px] h-[56px] bg-[#006269]  rounded font-poppins flex text-white items-center justify-center cursor-pointer
               
@@ -230,11 +230,9 @@ const Goeduform2 = () => {
                    : "bg-[#006269] opacity-60"
                } `}
             >
-              {/* <Link href={isFormValid ? "/AiForm3" : "#"} passHref> */}
                 <button type="submit" className="" disabled={!isFormValid}>
                   Continue
                 </button>
-              {/* </Link> */}
             </div>
           </div>
 

@@ -90,7 +90,7 @@ const Goeduform3 = () => {
         </div>
       </div>
 
-      <div className="md:hidden font-poppins w-[200px] h-[30px] flex  gap-14 pt-3 px-8">
+      <div className="md:hidden font-poppins w-[100%] h-[30px] font-poppins flex justify-between items-center  pt-5 px-4">
         <Link href="/Goeduform">
           {" "}
           <h1 className=" text-[12px] text-[#006269] ">
@@ -109,7 +109,7 @@ const Goeduform3 = () => {
         </u>
       </div>
 
-      <div className=" md:w-[1280px] md:h-full md:mx-7 md:p-6 font-poppins md:mt-6 bg-[#F9F9F9]">
+      <div className=" lg:w-[1280px] md:h-full md:mx-7 md:p-6 font-poppins md:mt-6 bg-[#F9F9F9]">
         <form ref={form} className="md:space-y-6" onSubmit={handleSubmit}>
           <section>
             <div className="hidden  md:flex gap-48">
@@ -171,8 +171,11 @@ const Goeduform3 = () => {
                 Submit
               </button>
             </div>
+            <div className="flex justify-center items-center w-[330px] h-[48px] mt-[190px] ">
+              
+            
             <div
-              className={`md:hidden  w-[260px] h-[48px] mt-[42%] mx-[5%]  rounded font-poppins flex  items-center justify-center cursor-pointer ${
+              className={`md:hidden  py-3 px-7   rounded font-poppins flex  items-center justify-center cursor-pointer ${
                 isChecked
                   ? "bg-[#006269] text-white"
                   : "bg-[#006269] opacity-60"
@@ -182,7 +185,7 @@ const Goeduform3 = () => {
                 Submit & Continue
               </button>
             </div>
-          
+            </div>
           </div>
         </form>
       </div>
