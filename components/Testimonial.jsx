@@ -90,7 +90,7 @@ const Testimonial = () => {
           <div>
             <h2 className=" lg:text-[24px] text-[20px] md:text-[20px] mb-[8px]  mt-[60px] md:mt-0 font-prociono">TESTIMONIALS</h2>
           </div>
-          <div className="w-[355px] md:w-full flex text-center lg:w-[860px] md:px-7 ">
+          <div className="w-[350px] md:w-full flex text-center lg:w-[860px] md:px-7 ">
             <p className="lg:text-[48px] md:text-[40px] text-[24px]  md:text-center lg:text-center" >What our Customer says about us</p>
           </div>
         </div>

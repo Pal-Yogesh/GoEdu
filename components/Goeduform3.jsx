@@ -90,22 +90,22 @@ const Goeduform3 = () => {
         </div>
       </div>
 
-      <div className="md:hidden font-poppins flex items-center justify-center gap-5 mt-5">
+      <div className="md:hidden font-poppins w-[200px] h-[30px] flex  gap-14 pt-3 px-8">
         <Link href="/Goeduform">
           {" "}
-          <h1 className="w-[112px] h-[21px] text-[12px] text-[#006269] ">
+          <h1 className=" text-[12px] text-[#006269] ">
             Personal Details
           </h1>
         </Link>
         <Link href="/Goeduform2">
           {" "}
-          <h1 className="w-[112px] h-[21px] text-[12px] text-[#006269] ">
+          <h1 className=" text-[12px] text-[#006269] ">
             Additional Details
           </h1>
         </Link>
         <u>
           {" "}
-          <h1 className="w-[112px] h-[21px] text-[12px] ">Submit</h1>
+          <h1 className=" text-[12px] ">Submit</h1>
         </u>
       </div>
 
@@ -134,7 +134,7 @@ const Goeduform3 = () => {
 
             {/* mobile view */}
             <div className="md:hidden w-[390px] h-[160px] font-poppins mt-6 mx-4 ">
-              <div className="w-[342px] h-[112px]  mx-2">
+              <div className="w-[70%] h-[112px]  mx-2">
                 <h2 className="text-lg font-semibold mb-4 text-[24px]">
                   DISCLAIMER
                 </h2>
@@ -156,7 +156,7 @@ const Goeduform3 = () => {
          
           </section>
 
-          <div className="md:pt-60    w-[1280px]  md:flex justify-center items-center  ">
+          <div className="pb-3 md:pt-60    w-[1280px]  md:flex justify-center items-center  ">
            
             <div
               className={`hidden  w-[235px] h-[56px] mb-[70px] rounded font-poppins md:flex  items-center justify-center cursor-pointer 
@@ -172,7 +172,7 @@ const Goeduform3 = () => {
               </button>
             </div>
             <div
-              className={`md:hidden  w-[330px] h-[48px] mt-[490px] mx-9 rounded font-poppins flex  items-center justify-center cursor-pointer ${
+              className={`md:hidden  w-[260px] h-[48px] mt-[42%] mx-[5%]  rounded font-poppins flex  items-center justify-center cursor-pointer ${
                 isChecked
                   ? "bg-[#006269] text-white"
                   : "bg-[#006269] opacity-60"

@@ -44,7 +44,7 @@ const Howwework = () => {
               />
             </div>
 
-            <div className="w-[300px] h-[100px] md:h-[300px] md:w-[650px] lg:w-[500px]">
+            <div className="w-[80%] h-[100px] md:h-[300px] md:w-[650px] lg:w-[500px]">
               <h1 className="text-[12px] mt-7 md:mt-0 md:text-[16px] text-[#000000]">
                 STEP {currentIndex + 1}
               </h1>
@@ -129,7 +129,7 @@ const Howwework = () => {
         </div>
       </div>
 
-      <div className="bg-[#DFEEEF] md:hidden flex justify-center items-center pt-52 pb-20 gap-3 ">
+      <div className="bg-[#DFEEEF] md:hidden flex justify-center items-center pt-[300px] pb-20 gap-3 ">
         {!iconClicked ? (
           <>
             <Image

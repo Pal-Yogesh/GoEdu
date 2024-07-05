@@ -163,6 +163,7 @@ const Work = () => {
             </h1>
           </div>
           <div className=" mx-10 mt-8">
+            <div className="w-[80%] h-[300px]">
             <p className="text-[14px] text-[#0099A3]">
               STEP {step.toString().padStart(2, "0")}
             </p>
@@ -172,7 +173,7 @@ const Work = () => {
             <p className="mt-4 text-[14px] text-[#333333]">
               {Data2[step - 1].description}
             </p>
-
+            </div>
             <div className="flex space-x-4 mt-10 pb-16 ">
               <Image
                 className="rounded-lg cursor-pointer"

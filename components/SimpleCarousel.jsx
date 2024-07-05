@@ -81,7 +81,7 @@ const SimpleCarousel = () => {
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 1.05,
+          slidesToShow: 1.0,
           slidesToScroll: 1,
           arrows: false,
           infinite: true,
