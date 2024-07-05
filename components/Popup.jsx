@@ -66,8 +66,10 @@ const Popup = () => {
 
   return (
     <div className="z-10  fixed inset-0 flex items-center justify-center    bg-black bg-opacity-50 font-poppins">
+
+      <div className="bg-[#FFFFFF] w-[351px] h-[650px] md:w-[710px] md:h-[460px] lg:w-[950px] lg:h-[520px] rounded  border-8 border-[#CDC6DB30] ">
       <div
-        className="md:hidden  cursor-pointer absolute top-[123px] right-[17px] shadow-xl rounded-full"
+        className="md:hidden  cursor-pointer flex justify-end "
         onClick={handleClose}
       >
         <svg
@@ -84,8 +86,6 @@ const Popup = () => {
           />
         </svg>
       </div>
-
-      <div className="bg-[#FFFFFF] w-[351px] h-[600px] md:w-[710px] md:h-[460px] lg:w-[950px] lg:h-[520px] rounded  border-8 border-[#CDC6DB30] ">
         <div className="  text-[#006269] ">
           <h1 className="text-[24px] md:text-[32px] lg:text-[40px] text-center font-semibold mt-4">
             Connect with our Experts
