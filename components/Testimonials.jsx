@@ -60,7 +60,7 @@ const Testimonials = () => {
   return (
     <>
       <div>
-        <div className="bg-[#F4FCFC] pt-10 md:pt-64 lg:pt-20  pb-10">
+        <div className="bg-[#F4FCFC] pt-10 lg:pt-16  pb-10">
           <div>
             <h1 className="text-[24px] text-[#000000] text-center">
               TESTIMONIALS
