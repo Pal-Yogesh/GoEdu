@@ -10,11 +10,10 @@
   },
   "dependencies": {
     "@emailjs/browser": "^4.3.3",
-    
     "next": "14.2.4",
     "react": "^18",
     "react-dom": "^18",
-   
+    "react-multi-carousel": "^2.8.5",
     "react-slick": "^0.30.2",
     "slick-carousel": "^1.8.1",
     "slick-slider": "^1.8.2"

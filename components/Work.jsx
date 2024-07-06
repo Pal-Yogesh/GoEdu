@@ -23,7 +23,7 @@ const Work = () => {
   return (
     <>
       {/* laptop ui */}
-      <div id="featuresid" className="hidden md:block lg:mt-8 h-[85vh] w-auto mb-20">
+      <div id="featuresid" className="hidden md:block  h-[85vh] w-auto ">
         <section>
           <div className="flex">
             <div className="md:w-[65%] lg:w-[70%] md:h-[700px] lg:h-[580px] bg-[#FAFAFA]">

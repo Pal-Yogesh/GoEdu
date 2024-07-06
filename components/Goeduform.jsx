@@ -126,15 +126,15 @@ const Goeduform = () => {
       </div>
 
 
-      <div className="md:hidden w-[100%] h-[30px] font-poppins flex justify-between items-center  pt-5 px-4 ">
+      <div className="md:hidden w-[100%] h-[30px] font-poppins flex justify-between items-center  pt-5 px-2 ">
         
           <u>
-          <h1 className=" text-[12px]">Personal Details</h1></u>
+          <h1 className=" text-[14px]">Personal Details</h1></u>
         
 
-        <h1 className=" text-[12px]">Additional Details</h1>
+        <h1 className=" text-[14px]">Additional Details</h1>
 
-        <h1 className=" text-[12px]">Submit</h1>
+        <h1 className=" text-[14px]">Submit</h1>
       </div>
 
 

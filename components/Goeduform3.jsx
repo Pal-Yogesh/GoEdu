@@ -90,22 +90,22 @@ const Goeduform3 = () => {
         </div>
       </div>
 
-      <div className="md:hidden font-poppins w-[100%] h-[30px] font-poppins flex justify-between items-center  pt-5 px-4">
+      <div className="md:hidden font-poppins w-[100%] h-[30px] font-poppins flex justify-between items-center  pt-5 px-2">
         <Link href="/Goeduform">
           {" "}
-          <h1 className=" text-[12px] text-[#006269] ">
+          <h1 className=" text-[14px] text-[#006269] ">
             Personal Details
           </h1>
         </Link>
         <Link href="/Goeduform2">
           {" "}
-          <h1 className=" text-[12px] text-[#006269] ">
+          <h1 className=" text-[14px] text-[#006269] ">
             Additional Details
           </h1>
         </Link>
         <u>
           {" "}
-          <h1 className=" text-[12px] ">Submit</h1>
+          <h1 className=" text-[14px] ">Submit</h1>
         </u>
       </div>
 

@@ -56,7 +56,7 @@ const Howwework = () => {
               </h1>
             </div>
           </div>
-          <div className="hidden  md:flex  md:justify-end md:items-end md:pt-20 md:pr-20 gap-2">
+          <div className="hidden   md:flex  md:justify-end md:items-end md:pt-20 md:pr-20 gap-2">
             {!iconClicked ? (
               <>
                 <Image
@@ -129,7 +129,7 @@ const Howwework = () => {
         </div>
       </div>
 
-      <div className="bg-[#DFEEEF] md:hidden flex justify-center items-center pt-[300px] pb-20 gap-3 ">
+      <div className="bg-[#DFEEEF] md:hidden flex justify-center items-center pt-[312px] pb-10 gap-3 ">
         {!iconClicked ? (
           <>
             <Image
