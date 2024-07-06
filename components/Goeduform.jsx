@@ -253,7 +253,7 @@ const Goeduform = () => {
                   placeholder="Other Number"
                   className="w-[100%] h-[40px] lg:w-[300px] md:h-[56px] px-3 py-2 placeholder-[#667085] text-[16px] border border-[#E7E7E7] rounded-md"
                   value={formData.otherNumber}
-                  onChange={handlePhoneChange}
+                  onChange={handleChange}
                 />
               </div>
             </div>
