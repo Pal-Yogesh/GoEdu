@@ -239,7 +239,7 @@ const Featureandbenefits = () => {
   return (
     <div className="bg-[#F4FCFC] pb-10  lg:pb-20">
       <div>
-        <h1 className="font-prociono pt-5 text-[28px] lg:text-[56px] text-[#010101] text-center">
+        <h1 className="font-prociono pt-10 text-[28px] lg:text-[56px] text-[#010101] text-center">
           Features and Benefits
         </h1>
         <h1 className="mt-4 text-[14px] w-[90%] mx-3 px-6  md:text-[18px] text-[#111111] md:text-center">
@@ -259,7 +259,7 @@ const Featureandbenefits = () => {
             // autoPlay={true}
             autoPlaySpeed={2000}
             keyBoardControl={true}
-            customTransition="transform 1000ms ease-in"
+            customTransition="transform 750ms ease-in"
             transitionDuration={1000}
             containerClass="carousel-container"
             removeArrowOnDeviceType={["desktop", "tablet", "mobile"]}
@@ -269,7 +269,7 @@ const Featureandbenefits = () => {
             {Features.map((feature, index) => (
               <div
                 key={index}
-                className="w-[80%] md:w-[358px] h-[447px] border border-black md:px-4 bg-white"
+                className="w-[90%] md:w-[358px] h-[447px] border border-black md:px-4 bg-white"
               >
                 <h1 className="md:w-[340px] md:h-[34px] pt-5 px-3 font-prociono text-[24px] md:text-[28px] text-[#000000]">
                   {feature.heading}

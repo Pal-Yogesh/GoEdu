@@ -17,14 +17,14 @@ const About = () => {
                 <p className="w-[80%] text-[32px] pt-7 md:pt-20 md:w-[500px]  font-prociono md:text-[50px] text-[#FFFFFF] leading-none">
                   India&apos;s Premier AI-Driven College Counseling Portal
                 </p>
-                <p className="w-[80%] mt-20 text-[14px] md:mt-9 md:w-[500px] md:text-[16px] text-[#FFFFFF] font-light ">
+                <p className="w-[80%] mt-12 text-[14px] md:mt-9 md:w-[500px] md:text-[16px] text-[#FFFFFF] font-light ">
                   At Go Edu, we harness the power of AI to transform the college
                   admissions process. Our innovative platform offers
                   personalized guidance, ensuring each student finds their ideal
                   college match. We analyze academic records, interests, and
                   career goals to provide tailored recommendations.
                 </p>
-                <p className="w-[80%] mt-20 pb-16 text-[14px] md:mt-9 md:w-[500px] md:text-[16px] text-[#FFFFFF] font-light ">
+                <p className="w-[80%] mt-4 pb-16 text-[14px] md:mt-9 md:w-[500px] md:text-[16px] text-[#FFFFFF] font-light ">
                   With Goedu, students receive comprehensive support throughout
                   their college journey. Our expert counselors offer invaluable
                   advice, from application tips to interview preparation. Join

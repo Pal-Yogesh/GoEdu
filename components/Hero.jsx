@@ -15,16 +15,16 @@ const Hero = () => {
           height={100}
         />
         <div className="absolute inset-0 top-[380px] "> 
-          <h1 className="px-10 w-[90%] h-[117px] text-[30px] text-[#333333] font-prociono">
+          <h1 className="px-10 w-[90%] h-[117px] text-[30px] text-[#333333] font-prociono font-semibold">
             No.1 AI College Counseling
           </h1>
-          <p className="px-10 w-[90%] h-[60px] text-[12px] text-black ">
+          <p className="px-10 w-[100%] h-[60px] text-[14px] text-black ">
             Go Edu, India&apos;s No. 1 AI counseling portal, revolutionizes
             college admissions with personalized guidance and expert support.
             Our AI-driven platform ensures students find their perfect college
             match effortlessly.
           </p>
-          <div className="mt-20 mx-10 w-[163px] h-[37px] bg-[#006269] rounded  flex">
+          <div className="mt-[100px]  mx-10 w-[163px] h-[37px] bg-[#006269] rounded  flex">
             <button className="text-[12px] text-[#FFFFFF] my-2 mx-3 ">
             <Link href="/Goeduform">Take This First Step  </Link>  
             </button>

@@ -28,7 +28,7 @@ const Howwework = () => {
   return (
     <>
       <div id="howweworkid" className="bg-[#DFEEEF] ">
-        <h1 className="text-[32px] pt-16 md:pt-10 text-[#000000] md:text-[56px] text-center font-prociono">
+        <h1 className="text-[32px] pt-10 md:pt-10 text-[#000000] md:text-[56px] text-center font-prociono">
           How We Work
         </h1>
 

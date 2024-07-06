@@ -23,10 +23,10 @@ const testimonials = [
   },
   {
     imageSrc: "/testimonial2.svg",
-    para: "Goedu's AI-driven platform provided the most accurate college recommendations based on my interests and academic profile. The expert counselors gave me the confidence to ace my interviews and write compelling essays. I am now enrolled in one of the top computer science programs in the country. Goedu truly works!",
+    para: "Goedu's AI-driven platform provided the most accurate college recommendations based on my interests and academic profile. The expert counselors gave me the confidence to ace my interviews. I am now enrolled in one of the top computer science programs in the country. Goedu truly works!",
     num: "03",
     proff: "Computer Science Student",
-    name: "Ananya Sharma",
+    name: "Megha Dixit",
   },
   {
     imageSrc: "/testimonial4.svg",
