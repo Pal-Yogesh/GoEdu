@@ -108,7 +108,7 @@ const Work = () => {
               <div className="mx-12 flex justify-center items-center mt-[75px] w-[170px] h-[40px] text-[14px] text-[#0099A3] border border-[#0099A3] rounded-3xl">
                 <ul className="custom-list">
                   <li className="px-1 relative">
-                    &nbsp;&nbsp;&nbsp;&nbsp; 2-3 Business Days
+                    &nbsp;&nbsp;&nbsp;&nbsp; 24/7 Availability
                   </li>
                 </ul>
               </div>
