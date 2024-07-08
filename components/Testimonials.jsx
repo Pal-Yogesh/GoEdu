@@ -7,11 +7,11 @@ import "react-multi-carousel/lib/styles.css";
 
 const testimonials = [
   {
-    imageSrc: "/testimonial2.svg",
+    imageSrc: "/testimonials1.jpeg",
     para: "Goedu made my college application process so much easier! The AI-driven insights were spot-on, and the personalized guidance helped me find the perfect engineering college. The support from the counselors was invaluable, and I couldn't have done it without them. Thank you, Goedu!",
     num: "01",
     proff: "Engineering Student",
-    name: "Ananya Sharma",
+    name: "Parul",
   },
   {
     imageSrc: "/testimonial3.svg",
@@ -22,18 +22,18 @@ const testimonials = [
     name: "Raj Patel",
   },
   {
-    imageSrc: "/testimonial2.svg",
+    imageSrc: "/testimonials2.jpeg",
     para: "Goedu's AI-driven platform provided the most accurate college recommendations based on my interests and academic profile. The expert counselors gave me the confidence to ace my interviews. I am now enrolled in one of the top computer science programs in the country. Goedu truly works!",
     num: "03",
     proff: "Computer Science Student",
-    name: "Megha Dixit",
+    name: "Priyangini",
   },
   {
-    imageSrc: "/testimonial4.svg",
+    imageSrc: "/testimonials3.jpeg",
     para: "As an arts student, finding the right college was crucial for my career. Goedu's personalized guidance and comprehensive support made all the difference. The platform's user-friendly interface made the whole process smooth and efficient. I am thrilled with my college choice, all thanks to Goedu!",
     num: "04",
     proff: "Arts Student",
-    name: "Karthik Rao",
+    name: "Shivam Panwar",
   },
 ];
 
@@ -95,11 +95,12 @@ const Testimonials = () => {
                     {testimonial.para}
                   </h1>
                   <h1 className="pt-4 text-center">⭐⭐⭐⭐⭐</h1>
-                  <div className="pt-5 flex justify-center items-center">
+                  <div className="pt-4 flex justify-center items-center ">
                     <Image
+                    className="rounded-full h-[55px] w-[55px]"
                       src={testimonial.imageSrc}
-                      width={50}
-                      height={50}
+                      width={55}
+                      height={55}
                       alt="client"
                     />
                   </div>

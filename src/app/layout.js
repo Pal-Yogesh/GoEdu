@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
         
          {/* <Navbar /> */}
          
-      <Popup />
+      {/* <Popup /> */}
         {children}
 
         {/* <Footer /> */}

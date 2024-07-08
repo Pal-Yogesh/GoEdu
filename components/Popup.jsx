@@ -1,18 +1,27 @@
 "use client";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import { useRouter } from "next/navigation";
 
 const Popup = () => {
   const form = useRef();
+  const router = useRouter();
+  const [isFormVisible, setIsFormVisible] = useState(false);
 
-  const [isFormVisible, setIsFormVisible] = useState(true);
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsFormVisible(true);
+    }, 2000); 
+
+    return () => clearTimeout(timer);
+  }, []);
 
   const [formData, setFormData] = useState({
     name: "",
+    phonenumber: "",
     email: "",
-    phone: "",
-    course: "",
-    message: "",
+    preferredcourse: "",
+    textmessage: "",
   });
 
   const handleChange = (e) => {
@@ -30,7 +39,7 @@ const Popup = () => {
   const handlePhoneChange = (e) => {
     const value = e.target.value;
     if (/^\d*$/.test(value) && value.length <= 10) {
-      setFormData({ ...formData, mobile: value });
+      setFormData({ ...formData, phonenumber: value });
     }
   };
 
@@ -45,14 +54,15 @@ const Popup = () => {
       .then(
         () => {
           console.log("SUCCESS!");
-          alert("Submitted");
+          router.push('/Goedusuccess');
+          
           // Reset form data after successful submission
           setFormData({
             name: "",
+            phonenumber: "",
             email: "",
-            phone: "",
-            course: "",
-            message: "",
+            preferredcourse: "",
+            textmessage: "",
           });
         },
         (error) => {
@@ -92,8 +102,7 @@ const Popup = () => {
           </h1>
 
           <h1 className="text-[10px] md:text-[14px] lg:text-[18px] text-center">
-            For further information, please fill in the form below. We will
-            contact you as soon as possible.
+          Need help deciding which college to choose or which career to pursue
           </h1>
         </div>
 
@@ -104,23 +113,28 @@ const Popup = () => {
                 type="text"
                 name="name"
                 placeholder="Name*"
+                value={formData.name}
                 required
                 className="  px-4 py-3 placeholder-[#969696] text-[16px] text-[#969696] border border-[#E1E3E2] font-poppins bg-[#F9F9F9] rounded-md"
                 onChange={handleChange}
               />
 
               <input
-                type="text"
+                type="tel"
                 name="phonenumber"
                 placeholder="Phone Number*"
                 required
+                value={formData.phonenumber}
+
                 className="  px-4 py-3 placeholder-[#969696] text-[16px] text-[#969696] border border-[#E1E3E2] font-poppins bg-[#F9F9F9] rounded-md"
                 onChange={handlePhoneChange}
               />
               <input
-                type="text"
+                type="email"
                 name="email"
                 placeholder="Email*"
+                value={formData.email}
+
                 required
                 className="  px-4 py-3 placeholder-[#969696] text-[16px] text-[#969696] border border-[#E1E3E2] font-poppins bg-[#F9F9F9] rounded-md"
                 onChange={handleChange}
@@ -130,18 +144,25 @@ const Popup = () => {
                 type="text"
                 name="preferredcourse"
                 placeholder="Preffered Course"
-                required
+                value={formData.preferredcourse}
+
                 className="w  px-4 py-3 placeholder-[#969696] text-[16px] text-[#969696] border border-[#E1E3E2] font-poppins bg-[#F9F9F9] rounded-md"
-              />
+                onChange={handleChange}
+
+             />
             </div>
 
             <div className="mx-4 ">
               <textarea
                 type="text"
                 name="textmessage"
+                value={formData.textmessage}
+
                 placeholder="Message for our Counsellor (Atmost 250 words)"
                 className="w-[302px] h-[120px]  md:w-[660px] md:h-[110px] lg:w-[903px] lg:h-[150px]  text-[#969696] px-3 py-2 placeholder-[#667085] text-[16px] border border-[#E7E7E7] bg-[#F9F9F9] rounded-md resize-none"
                 maxLength={1500}
+                onChange={handleChange}
+
               ></textarea>
             </div>
 
@@ -150,7 +171,7 @@ const Popup = () => {
                 type="submit"
                 className="w-[302px] h-[50px] md:w-[250px] md:h-[50px] bg-teal-700 text-white py-2 px-4 rounded hover:bg-teal-800 transition duration-300 "
               >
-                Enquire Now
+                Get Free Consultation
               </button>
             </div>
           </div>
@@ -174,6 +195,7 @@ const Popup = () => {
             />
           </svg>
         </div>
+
       </div>
     </div>
   );
