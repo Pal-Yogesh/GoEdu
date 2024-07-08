@@ -1,9 +1,6 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Navbar from "../../components/Navbar";
-import Popup from "../../components/Popup";
 
-import Footer from "../../components/Footer";
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -18,13 +15,9 @@ export default function RootLayout({ children }) {
     <html lang="en" className="scroll-smooth">
       <link rel="icon" href="/goEdu 1.svg" />
       <body className={inter.className}>
-        
-         {/* <Navbar /> */}
-         
-      {/* <Popup /> */}
+     
         {children}
 
-        {/* <Footer /> */}
         
         </body>
     </html>
