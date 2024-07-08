@@ -11,7 +11,7 @@ const Popup = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsFormVisible(true);
-    }, 2000); 
+    }, 20000); 
 
     return () => clearTimeout(timer);
   }, []);

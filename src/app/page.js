@@ -13,12 +13,13 @@ import Work from "../../components/Work";
 export default function Home() {
   return (
     <>
-      <Head>
+      <head>
         <meta charSet="utf-8" />
         <meta httpEquiv="x-ua-compatible" content="ie=edge" />
         <meta name="author" content="Digital 360" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <title>No.1 AI College Counseling in India 2024-25 | Go Edu</title>
+        <title>No.1 AI College Counseling in India </title>
         <meta name="description" content="Experience India's premier AI college counseling with Go Edu. Get tailored college matches, expert guidance, and achieve your academic dreams." />
         <meta name="keywords" content="AI College Counseling, College Counseling, AI Counseling, Best AI college counseling, admission counseling, college counselor, college admissions counselor, best college counseling" />
         <meta property="og:locale" content="en_US" />
@@ -142,7 +143,7 @@ export default function Home() {
             }
           }`}
         </script>
-      </Head>
+      </head>
 
       <Navbar />
       <Hero />
