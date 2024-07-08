@@ -102,7 +102,7 @@ const Popup = () => {
           </h1>
 
           <h1 className="text-[10px] md:text-[14px] lg:text-[18px] text-center">
-          Need help deciding which college to choose or which career to pursue
+          Need help deciding which college to choose or which career to pursue.
           </h1>
         </div>
 
@@ -159,7 +159,7 @@ const Popup = () => {
                 value={formData.textmessage}
 
                 placeholder="Message for our Counsellor (Atmost 250 words)"
-                className="w-[302px] h-[120px]  md:w-[660px] md:h-[110px] lg:w-[903px] lg:h-[150px]  text-[#969696] px-3 py-2 placeholder-[#667085] text-[16px] border border-[#E7E7E7] bg-[#F9F9F9] rounded-md resize-none"
+                className="w-[302px] h-[120px]  md:w-[660px] md:h-[110px] lg:w-[903px] lg:h-[150px]  text-[#969696] px-3 py-2 placeholder-[#969696] text-[16px] border border-[#E7E7E7] bg-[#F9F9F9] rounded-md resize-none"
                 maxLength={1500}
                 onChange={handleChange}
 
@@ -169,7 +169,7 @@ const Popup = () => {
             <div className="flex justify-end items-end mr-4">
               <button
                 type="submit"
-                className="w-[302px] h-[50px] md:w-[250px] md:h-[50px] bg-teal-700 text-white py-2 px-4 rounded hover:bg-teal-800 transition duration-300 "
+                className="w-[302px] h-[50px] md:w-[250px] md:h-[50px] bg-[#006269] text-white py-2 px-4 rounded hover:bg-[#029FAA] transition duration-300 "
               >
                 Get Free Consultation
               </button>
